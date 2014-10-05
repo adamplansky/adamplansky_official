@@ -7,14 +7,20 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
     <main role="main">
-       <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+    
+    <footer>
+      <a href="http://jedemedobaru.cz/" class="jedemedobaru">JEDEMEDOBARU.CZ</a><br>
+     
+      <a href="http://luciekepplova.cz/">luciekepplova.cz</a>
+      <a href="http://tomasbrincil.cz/">tomasbrincil.cz</a>
+       <a href="http://jurastransky.cz/">jurastranky.cz</a>
+    </footer>
+    
   </body>
 </html>

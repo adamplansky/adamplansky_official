@@ -6,11 +6,11 @@
 img {
   @extend .img-responsive;
   margin: 0 auto;
-  }
+}
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
-  }
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -18,29 +18,63 @@ img {
 .column {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .form {
   @extend .col-md-6;
-  }
+}
 .form-centered {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .submit {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
+}
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
+  background-color: transparent;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
-  }
+
+  margin:0;
+  
+}
+html body{
+  background-color: transparent;  
+}
+html, body, .container { height: 100%; }
+body > .container { height: auto; min-height: 100%; }
 section {
   @extend .row;
   margin-top: 20px;
-  }
+}
+html { 
+  background: image-url("bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer {
+ clear: both;
+ position: relative;
+ z-index: 10;
+ height: 7em;
+ margin-top:-6em;
+ color: #e3dad5;
+ text-align:center;
+ a, a:visited, a:hover{
+     font-family: 'Open Sans', sans-serif;
+   color:#fff;
+   font-size:15px;
+   background-color:transparent;
+   margin:0 5px;
+ }
+ .jedemedobaru{
+   font-weight:800;
+ }
+}
+.content { padding-bottom: 7em; }
