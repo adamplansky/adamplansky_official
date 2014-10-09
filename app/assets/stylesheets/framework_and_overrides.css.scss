@@ -62,8 +62,7 @@ footer {
  clear: both;
  position: relative;
  z-index: 10;
-
- margin-top:-6em;
+ margin-top:-7em;
  color: #e3dad5;
  text-align:center;
  a, a:visited, a:hover{
@@ -73,8 +72,37 @@ footer {
    background-color:transparent;
    margin:0 5px;
  }
+ 
+ h4{
+   margin-bottom: 0px;
+ }
+ 
  .jedemedobaru{
-   font-weight:800;
+   &,&:hover, &:visited{
+      color: #e3dad5;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     font-weight:800;
+   }
+ }
+ div{
+   
+ }
+ .team{
+   
+   span{
+     padding:0 40px;
+     border-top:1px solid rgba(227,218,213,0.5);
+   }
+   
+   margin-top:10px;
+    font-size:12px;
+    font-family: 'Open Sans', sans-serif;
+   a{
+     font-size:12px;
+     font-family: 'Open Sans', sans-serif;
+     //font-family:'bebas_neueregular';
+   }
  }
 }
 .content { padding-bottom: 7em; }
