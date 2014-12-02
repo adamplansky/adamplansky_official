@@ -2,8 +2,13 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : "Adamplansky Official" %></title>
-  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Adamplansky Official" %>">
+  <title><%= content_for?(:title) ? yield(:title) : "Adam Plánský" %></title>
+	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Programátor zabývající se o Ruby on rails a CISCO technologie." %>"
+  <meta name="author" content="Adam Plánský">
+  <meta name="robots" content="index,follow"> 
+  <meta name="keywords" content="ruby on rails, cisco, Kralupy nad Vltavou, programmer">
+  
+  
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
