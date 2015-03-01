@@ -1,0 +1,30 @@
+<section class="container">
+  <section class="col-md-12">
+    
+    <h1 class="cd">Countdown</h1>
+   
+   
+   <div class="progress">
+     <div class="progress-bar progress-bar-striped active progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+     </div>
+   </div>
+   
+   <div class="cd">
+     <section class="col-md-4">
+       <h1 class="left">   past: <%= @zamnou %>d  </h1>
+     </section>     <section class="col-md-4">
+              <h1><strong><%= @procenta %>%</strong>  <span>[<%= @zamnou %> / <%= @overall.to_i %> ]</span></h1>
+     </section>
+     <section class="col-md-4">
+
+      <h1 class="right"> TO GO:   <%= ( @overall.to_i)-(@zamnou).to_i %>d</h1>
+     </section>
+
+   </div>
+
+   
+   
+   
+   
+  </section>
+</section>

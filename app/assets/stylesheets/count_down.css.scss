@@ -1,0 +1,27 @@
+//COUNT DOWN
+body {
+  background-color:#000 !important;
+  background-image:none !important;
+  h1.cd {
+    color:orange;
+    font-size:100px;
+    text-align:center;
+  }
+  .progress{
+    height:50px;
+  }
+  .progress-bar-warning{
+    background-color:orange;
+  }
+  div.cd{
+    h1{
+      color:orange;
+      text-align:center;
+      span{
+        font-size:20px;
+      }
+    }
+    .left{float:left;}
+    .right{float:right}
+  }
+}
