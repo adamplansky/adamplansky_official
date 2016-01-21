@@ -1,13 +1,18 @@
 <div class="container">
-  <h1>My Blog</h1>
-  <hr />
+  <% if signed_in? %>
+    <%= link_to 'NEW POST', new_post_path %>
+  <% end %>
   <% @posts.each do |post| %>
     <h1><%= link_to post.title, post %></h1>
-
+    <h5>Published <%= time_ago_in_words post.published_at %> ago</h5>
+    <% if signed_in? %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Editovat', edit_post_path(post) %>
+    <% end %>
     <p>
       <%= markdown(post.body) %>
     </p>
-    <h5>Published <%= time_ago_in_words post.published_at %> ago</h5>
+
 
     <% if post != @posts.last %>
     <hr />

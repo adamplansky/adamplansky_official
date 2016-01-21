@@ -2,11 +2,6 @@
   <li><%= link_to "Home",       root_path %></li>
   <li><%= link_to "Blog",       posts_path %></li>
   <% if user_signed_in? %>
-    <li id="fat-menu" class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        Account <b class="caret"></b>
-      </a>
-    </li>
     <li> <%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
   <% else %>
     <li><%# link_to "Sign in", new_user_session_path %></li>
