@@ -1,15 +1,4 @@
-<%= form_for @post do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+<% if signed_in? %>
 
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
+<%= render 'form' %>
 <% end %>
