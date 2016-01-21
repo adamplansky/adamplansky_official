@@ -1,3 +1,16 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
-<%= markdown(Post.first.body) %>
+<div class="container">
+  <h1>My Blog</h1>
+  <hr />
+  <% @posts.each do |post| %>
+    <h1><%= link_to post.title, post %></h1>
+
+    <p>
+      <%= markdown(post.body) %>
+    </p>
+    <h5>Published <%= time_ago_in_words post.published_at %> ago</h5>
+
+    <% if post != @posts.last %>
+    <hr />
+    <% end %>
+  <% end %>
+</div>

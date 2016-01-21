@@ -17,14 +17,18 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+
+  <header>
+    <%= render 'layouts/header' %>
+  </header>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   <main role="main" class="<%= content_for?(:mainclass) ? yield(:mainclass) : "defmain" %>">
     <%= yield %>
   </main>
 
-  <footer>
+  <!-- <footer>
     <h4><a href="http://jedemedobaru.cz/" class="jedemedobaru">JEDEMEDOBARU.CZ</a><br></h4>
     <div class="team">
       <span>
@@ -32,7 +36,7 @@
       coded by: <a href="http://www.adamplansky.cz/">Adam Plánský</a>
       </span>
     </div>
-  </footer>
+  </footer> -->
 
 
 

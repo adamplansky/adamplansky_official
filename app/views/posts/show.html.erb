@@ -1,2 +1,10 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="container">
+  <h1><%= @post.title %></h1>
+  <hr />
+
+  <p>
+    <%= markdown(@post.body) %>
+  </p>
+  <h4>Published <%= time_ago_in_words @post.published_at %> ago</h4>
+  <%= link_to "Back to Index", posts_path %>
+</div>
