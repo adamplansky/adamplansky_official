@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  get '/.well-known/acme-challenge/:id' => 'blogs#letsencrypt'
+
+
   get 'weights/index'
   resources :weights,only: [:index]
   resources :posts,only: [:index, :show, :new, :create, :edit, :update, :destroy]
