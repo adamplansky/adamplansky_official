@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-#  get 'weights/index'
-
+  get 'weights/index'
   resources :weights,only: [:index]
   resources :posts,only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
