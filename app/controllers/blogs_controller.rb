@@ -13,6 +13,7 @@ class BlogsController < ApplicationController
   end
 
   def letsencrypt
-    render text: "9QmtSh28jf6ZJ73NB3H7qeUd65mSMfkWx_oJ-WDcE4I.iCc-U21ZSYsn3HU_PKeUmBe-fCYkBejsiePbomWUjvU"
+    #render text: "9QmtSh28jf6ZJ73NB3H7qeUd65mSMfkWx_oJ-WDcE4I.iCc-U21ZSYsn3HU_PKeUmBe-fCYkBejsiePbomWUjvU"
+    render text: "wciDkBzChDKhcUwv7McWfDyVxZfTfw5JVBPu4F9lmrw.iCc-U21ZSYsn3HU_PKeUmBe-fCYkBejsiePbomWUjvU"
   end
 end
