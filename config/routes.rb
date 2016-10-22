@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get '/.well-known/acme-challenge/:id' => 'blogs#letsencrypt'
+  #get '/.well-known/acme-challenge/:id' => 'blogs#letsencrypt'
 
 
   get 'weights/index'
