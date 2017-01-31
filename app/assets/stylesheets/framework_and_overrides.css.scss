@@ -40,10 +40,10 @@ main {
   margin-top: 51px; // accommodate the navbar
 
   margin:0;
-  
+
 }
 html body{
-  background-color: transparent;  
+  background-color: transparent;
 }
 html, body, .container { height: 100%; }
 body > .container { height: auto; min-height: 100%; }
@@ -51,8 +51,8 @@ section {
   @extend .row;
   margin-top: 20px;
 }
-html { 
-  background: image-url("bg.jpg") no-repeat center center fixed; 
+html {
+  //background: image-url("bg.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -72,11 +72,11 @@ footer {
    background-color:transparent;
    margin:0 5px;
  }
- 
+
  h4{
    margin-bottom: 0px;
  }
- 
+
  .jedemedobaru{
    &,&:hover, &:visited{
       color: #e3dad5;
@@ -86,15 +86,15 @@ footer {
    }
  }
  div{
-   
+
  }
  .team{
-   
+
    span{
      padding:0 40px;
      border-top:1px solid rgba(227,218,213,0.5);
    }
-   
+
    margin-top:10px;
     font-size:12px;
     font-family: 'Open Sans', sans-serif;
