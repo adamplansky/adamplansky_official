@@ -1,0 +1,60 @@
+<section class="container">
+  <section class="col-md-12">
+
+    <h1 class="cd">Praktická</h1>
+
+
+    <div class="progress">
+      <div class="progress-bar active " role="progressbar" aria-valuenow="<%= @procenta %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= @procenta %>%">
+      </div>
+    </div>
+
+    <div class="cd">
+      <section class="col-md-4">
+        <h1 class="left">   past: <%= @zamnou %>d  </h1>
+      </section>     <section class="col-md-4">
+        <h1><strong><%= @procenta %>%</strong>  <span>[<%= @zamnou %> / <%= @overall.to_i %> ]</span></h1>
+      </section>
+      <section class="col-md-4">
+
+        <h1 class="right"> TO GO:   <%= ( @overall.to_i)-(@zamnou).to_i %>d</h1>
+      </section>
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+  <section class="col-md-12">
+
+    <h1 class="cd">Teoretická</h1>
+
+
+    <div class="progress">
+      <div class="progress-bar active progress-bar-danger" role="progressbar" aria-valuenow="<%= @procenta_celkove %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= @procenta_celkove %>%">
+      </div>
+    </div>
+
+    <div class="cd">
+      <section class="col-md-4">
+        <h1 class="left">   past: <%= @zamnou_celkove %>d  </h1>
+      </section>     <section class="col-md-4">
+        <h1><strong><%= @procenta_celkove %>%</strong>  <span>[<%= @zamnou_celkove %> / <%= @overall_celkove.to_i %> ]</span></h1>
+      </section>
+      <section class="col-md-4">
+
+        <h1 class="right"> TO GO:   <%= ( @overall_celkove.to_i)-(@zamnou_celkove).to_i %>d</h1>
+      </section>
+
+    </div>
+
+
+
+
+
+  </section>
+</section>

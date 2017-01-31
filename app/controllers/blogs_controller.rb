@@ -4,12 +4,22 @@ class BlogsController < ApplicationController
   end
 
   def count_down
-    @future = Date.new(2015,9,6)
-    @past = Date.new(2014,10,17)
+
+    @future = Date.new(2017,3,2)
+    @past = Date.new(2017,1,31)
     @now = Date.today
     @overall = (@future - @past)
     @zamnou = (@now - @past).to_i
     @procenta = ((@zamnou.to_f / @overall)*100).round(2)
+
+
+    @future_celkove = Date.new(2017,4,15)
+    @past = Date.new(2017,1,31)
+
+    @overall_celkove = (@future_celkove - @past)
+    @zamnou_celkove = (@now - @past).to_i
+    @procenta_celkove = ((@zamnou_celkove.to_f / @overall_celkove)*100).round(2)
+
   end
 
   def letsencrypt
